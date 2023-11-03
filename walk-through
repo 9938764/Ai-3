@@ -1,0 +1,27 @@
+To run the FTP server using the provided code in a Windows terminal, follow these steps:
+
+1. **Install Python**: If you haven't already, you need to install Python on your system. You can download Python from the official website (https://www.python.org/downloads/windows/). During installation, make sure to check the option to add Python to your system's PATH.
+
+2. **Create a Python Script**: Save the provided Python code in a text file with a `.py` extension. For example, you can save the script as `ftp_server.py`.
+
+3. **Open Windows Command Prompt**: Open the Windows Command Prompt (CMD). You can do this by searching for "cmd" or "Command Prompt" in the Windows Start menu.
+
+4. **Navigate to the Directory**: Use the `cd` command to navigate to the directory where your Python script is located. For example, if your script is in the `C:\Users\YourUsername\Documents` folder, you can navigate to it like this:
+
+   ```bash
+   cd C:\Users\YourUsername\Documents
+   ```
+
+5. **Run the Python Script**: In the Command Prompt, use the `python` command to run your Python script. For example:
+
+   ```bash
+   python ftp_server.py
+   ```
+
+   If you have multiple versions of Python installed, you may need to use `python3` instead of `python`, depending on your Python installation. The correct command depends on your Python configuration.
+
+6. **Observe the Output**: If your script is working correctly, it will start the FTP server. You'll see messages indicating that the server is running, including the IP address and port it's listening on.
+
+7. **Connect to the FTP Server**: You can now connect to the FTP server from an FTP client. In your FTP client, specify the IP address mentioned in the output of your script (typically "0.0.0.0") and port 21. You should be able to access the FTP server without needing a username or password.
+
+The FTP server created by this script will allow anonymous access without requiring a username or password, and it serves files from the "./public" directory.

@@ -1,0 +1,31 @@
+Read a file which has the following form and perform the indicated operations and write the result as indicated. (str2num() should be used and it can be assumed that there are space between numbers and operators)
+Input file:
+50 + 40 = x
+10 - x = -10
+3 * x = 27
+x / 4 = 16
+...
+...
+Output file:
+x = 90 because 50 + 40 is ( 90)
+x = 20 because 10 - (20) is -10
+x = 9 because 3 * (9) = 27
+x = 64 because (64) / 4 = 16
+After,
+Modify your code so that not only x but any variable name can be used, such as
+weight - 20 = 40
+y + 8 = 13
+**********************************************
+Hello i am trying to solve this problem but when i am taking lines with this codes i cant indicate these equation to the matlab there is my code
+fid1 = fopen( 'dene.txt', 'rt' );
+fid2 = fopen( 'sonuc.txt', 'wt' );
+line = fgetl( fid1 );
+while ( line > 0 )
+  line2 = str2num(line);
+  %Write to the new file
+  fprintf( fid2, '%d\n', line2 );
+  %Read the next line
+  line = fgetl( fid1 );
+end
+%Close the file
+status = fclose( 'all' );
